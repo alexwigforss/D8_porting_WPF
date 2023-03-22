@@ -32,7 +32,7 @@ namespace D8_porting_WPF
             KeyPressDisplay.Text = output;
             if(e.Key == Key.Escape)
             {
-                System.Windows.Application.Current.Shutdown();
+                Application.Current.Shutdown();
             }
             else if(e.Key == Key.A)
             {
@@ -43,6 +43,11 @@ namespace D8_porting_WPF
             {
                 Title.Text = "IIIIIIIIIH!";
                 Text.Text = "Jasäjabah iiiiiiiih!";
+            }
+            else if (e.Key == Key.O)
+            {
+                Title.Text = "OOOOOOH!!";
+                Text.Text = "Åååh,\r\nOooh\r\nUuuuuh!\r\nYyyyyyyl!";
             }
         }
     }
